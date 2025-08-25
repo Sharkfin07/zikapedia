@@ -7,8 +7,8 @@ import { Provider } from "./provider.tsx";
 import "@/styles/globals.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode basename="/zikapedia">
-    <BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basename="/zikapedia">
       <Provider>
         <App />
       </Provider>
