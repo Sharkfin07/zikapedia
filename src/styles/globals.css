@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Ms+Madi&display=swap');
+@import "tailwindcss";
+
+@config "../../tailwind.config.js";
+
+@theme {
+    --font-instrument-serif: 'Instrument Serif', serif;
+    --font-ms-madi: 'Ms Madi', cursive;
+}
+
+#programmingAccordion div {
+    width: 100%;
+}
