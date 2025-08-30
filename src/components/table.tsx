@@ -1,6 +1,6 @@
 import {Divider} from "@heroui/divider";
 
-export default function Table({ items }): JSX.Element {
+export default function Table({ items }:{ items: string[] }): JSX.Element {
     const itemELements = items.map((item:string, index:number) => {
         return (
             <div key={index}>

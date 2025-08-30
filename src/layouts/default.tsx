@@ -1,6 +1,4 @@
-import { Link } from "@heroui/link";
 import { Divider } from "@heroui/divider";
-import { Button } from "@heroui/button";
 
 import { ZikaLogo, GithubIcon, LinkedInIcon, InstagramIcon, YoutubeIcon } from "@/components/icons";
 import NavbarMain from "@/components/navbar";

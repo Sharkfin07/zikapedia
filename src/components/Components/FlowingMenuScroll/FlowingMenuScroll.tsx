@@ -4,7 +4,7 @@
 
 import React from "react";
 import { gsap } from "gsap";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from "react-scroll";
 
 interface MenuItemProps {
   link: string;
@@ -47,7 +47,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
     return topEdgeDist < bottomEdgeDist ? "top" : "bottom";
   };
 
-  const handleMouseEnter = (ev: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseEnter = (ev: React.MouseEvent<Element>) => {
     if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current)
       return;
     const rect = itemRef.current.getBoundingClientRect();
@@ -64,7 +64,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
       .to([marqueeRef.current, marqueeInnerRef.current], { y: "0%" });
   };
 
-  const handleMouseLeave = (ev: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseLeave = (ev: React.MouseEvent<Element>) => {
     if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current)
       return;
     const rect = itemRef.current.getBoundingClientRect();
@@ -81,8 +81,6 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
       { y: edge === "top" ? "101%" : "-101%" },
     );
   };
-
-  const menuRef = React.useRef<HTMLDivElement | null>(null);
 
   const repeatedMarqueeContent = React.useMemo(() => {
     return Array.from({ length: 4 }).map((_, idx) => (
