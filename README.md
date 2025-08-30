@@ -10,3 +10,4 @@ Zikapedia is my latest portfolio website. The site can be accessed in zikapedia.
 - [Tailwind CSS](https://tailwindcss.com)
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
+- [Framer Motion](https://www.framer.com/motion)
