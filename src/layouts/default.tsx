@@ -7,22 +7,22 @@ import NavbarMain from "@/components/navbar";
 
 const socials = [
   {
-    logo: <GithubIcon />,
+    logo: <GithubIcon size={50} />,
     href: 'https://github.com/Sharkfin07',
     alt: 'GitHub Logo',
   },
   {
-    logo: <LinkedInIcon />,
-    href: 'www.linkedin.com/in/mohammad-zidane-kurnianto-651621378',
+    logo: <LinkedInIcon size={50} />,
+    href: 'https://www.linkedin.com/in/mohammad-zidane-kurnianto-651621378',
     alt: 'LinkedIn Logo',
   },
   {
-    logo: <InstagramIcon />,
+    logo: <InstagramIcon size={50} />,
     href: 'https://www.instagram.com/mohzidane_k/',
     alt: 'Instagram Logo',
   },
   {
-    logo: <YoutubeIcon />,
+    logo: <YoutubeIcon size={50} />,
     href: 'https://www.youtube.com/@saya-zika',
     alt: 'Youtube Logo',
   }
@@ -30,16 +30,15 @@ const socials = [
 
 const socialElements = socials.map((social, index) => {
   return (
-    <Button
+    <a
       key={index}
-      as={Link}
       href={social.href}
-      isIconOnly
-      variant="light"
       className="opacity-40 hover:opacity-100 scale-90 md:size-[50px]"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {social.logo}
-    </Button>
+    </a>
   );
 });
 

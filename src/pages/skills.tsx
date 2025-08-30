@@ -7,16 +7,16 @@ import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 import {Card, CardHeader, CardFooter} from "@heroui/card";
 import MediaThemeTailwindAudio from 'player.style/tailwind-audio/react';
-import FlowingMenu from "@/components/Components/FlowingMenu/FlowingMenu.tsx";
+import FlowingMenu from "@/components/Components/FlowingMenuScroll/FlowingMenuScroll.tsx";
 import {Divider} from "@heroui/divider";
 import BlurText from "@/components/TextAnimations/BlurText/BlurText.tsx";
 import CircularGallery from '@/components/Components/CircularGallery/CircularGallery'
 
 const menuItems = [
-    { link: '#programming', text: '#programming', image: 'https://images.unsplash.com/photo-1711346105258-bbb9136592d7?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { link: '#photography', text: '#photography', image: 'https://images.unsplash.com/photo-1652115741265-cc75910d391f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5hbG9nJTIwY2FtZXJhfGVufDB8fDB8fHww' },
-    { link: '#music', text: '#music', image: 'https://images.unsplash.com/photo-1699797401383-c605f83114aa?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { link: '#videography', text: '#videography', image: 'https://images.unsplash.com/photo-1619099619226-f96e319e3732?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+    { link: 'programming', text: '#programming', image: 'https://images.unsplash.com/photo-1711346105258-bbb9136592d7?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { link: 'photography', text: '#photography', image: 'https://images.unsplash.com/photo-1652115741265-cc75910d391f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5hbG9nJTIwY2FtZXJhfGVufDB8fDB8fHww' },
+    { link: 'music', text: '#music', image: 'https://images.unsplash.com/photo-1699797401383-c605f83114aa?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { link: 'videography', text: '#videography', image: 'https://images.unsplash.com/photo-1619099619226-f96e319e3732?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
 ];
 
 const albumItems = [

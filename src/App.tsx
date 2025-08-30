@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import IndexPage from "@/pages/index";
 import SkillsPage from "@/pages/skills";
 import ProjectsPage from "@/pages/projects";
+import NotFound from "@/pages/404";
 
 const titles: Record<string, string> = {
     "/": "Home - Zikapedia",
@@ -30,6 +31,7 @@ function App() {
                 <Route element={<IndexPage />} path="/" />
                 <Route element={<SkillsPage />} path="/skills" />
                 <Route element={<ProjectsPage />} path="/projects" />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </>
     );

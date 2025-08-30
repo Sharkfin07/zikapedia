@@ -5,12 +5,21 @@ import DefaultLayout from "@/layouts/default";
 import FlowingMenu from "@/components/Components/FlowingMenu/FlowingMenu.tsx";
 import {Divider} from "@heroui/divider";
 import {Image} from "@heroui/image";
+import Table from "@/components/table";
 
 const menuItems = [
   { link: '#', text: 'home', image: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTExfHxob21lfGVufDB8fDB8fHww' },
   { link: '/skills', text: 'skills', image: 'https://images.unsplash.com/photo-1599837487527-e009248aa71b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   { link: '/projects', text: 'projects', image: 'https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
 ];
+
+const achievementItems = [
+    "Juara 1 FLS2N 2024 Jenjang SMA/MA Cabang Instrumen Solo: Gitar Tingkat Provinsi Riau",
+    "Juara 2 FLS2N 2023 Jenjang SMA/MA Cabang Instrumen Solo: Gitar Tingkat Provinsi Riau",
+    "Peringkat 9 OSN 2024 Jenjang SMA/MA Bidang Informatika Tingkat Provinsi Riau",
+    "Juara 2 Lomba Video Semarak LCTP 2023 Tingkat Provinsi Riau",
+    "Peringkat 4 Tryout UTBK GAMAFTR (Gadjah Mada Flies to Riau) 2025"
+]
 
 export default function IndexPage() {
   return (
@@ -51,6 +60,7 @@ export default function IndexPage() {
         <h2 className={title({ class: "text-center text-3xl font-instrument-serif italic w-full block"})}>
           sekilas tentang saya
         </h2>
+          <Table items={achievementItems} />
         <div className={subtitle({ class: "my-4 text-md px-5 text-center" })}>
           <p>
             Saya sedang menempuh pendidikan<strong> Sarjana Sistem Informasi di Universitas Indonesia</strong>.

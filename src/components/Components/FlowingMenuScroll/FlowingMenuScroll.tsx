@@ -4,7 +4,7 @@
 
 import React from "react";
 import { gsap } from "gsap";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 interface MenuItemProps {
   link: string;
@@ -82,6 +82,8 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
     );
   };
 
+  const menuRef = React.useRef<HTMLDivElement | null>(null);
+
   const repeatedMarqueeContent = React.useMemo(() => {
     return Array.from({ length: 4 }).map((_, idx) => (
       <React.Fragment key={idx}>
@@ -103,9 +105,11 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
     >
       <Link
         className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-white text-[4vh] hover:text-[#060010] focus:text-white focus-visible:text-[#060010]"
-        to={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        to={link}
+        smooth={true}
+        duration={500}
       >
         {text}
       </Link>

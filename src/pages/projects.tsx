@@ -26,6 +26,15 @@ const projectItems = [
         alt: "SNBT Master in-game screenshot"
     },
     {
+        title: "",
+        description: "Skema Export Hub yang bertujuan untuk memudahkan UMKM Desa Wisata melalui distribusi melalui logistik kolektif dan branding.",
+        category: "Entrepreneurship",
+        img: "/project-img/project-bakuldesa.png",
+        alt: "BakulDesa mockup",
+        imgClass: "",
+        lightText: true
+    },
+    {
         title: "Cara Menanam Biopori",
         description: "Video peraih Juara 2 dalam lomba Pertamina Teens Futuremakers 2025.",
         link: "https://www.instagram.com/reel/DMIE_nUTWdc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
